@@ -1,0 +1,54 @@
+{
+    "tasks": {
+        "trainer": {
+            "desc": "AITrainer",
+            "workers": 4,
+            "worker_module" : "aitrainer",
+            "worker_class": "AITrainer",
+            "source_topic": "TOPIC_MODEL_NEEDS_TRAINING",
+            "target_topic_groups": [
+                [
+                    "TOPIC_MODEL_READY"
+                ]
+            ],
+            "worker_capacity": 1
+        },
+        "partial_trainer": {
+            "desc": "AITrainer Partial",
+            "workers": 4,
+            "worker_module" : "aitrainer",
+            "worker_class": "AITrainer",
+            "source_topic": "TOPIC_MODEL_NEEDS_PARTIAL_TRAINING",
+            "target_topic_groups": [
+                [
+                    "TOPIC_MODEL_READY"
+                ]
+            ],
+            "worker_capacity": 1
+        },
+        "trader": {
+            "desc": "AITrader",
+            "workers": 4,
+            "worker_module" : "aitradetask",
+            "worker_class": "AITradeTask",
+            "source_topic": "TOPIC_MODEL_READY",
+            "target_topic_groups": [
+                [
+                    "TOPIC_MODEL_CEMETERY"
+                ]
+            ],
+            "worker_capacity": 10
+        },
+        "cemetery": {
+            "desc": "AICemetery",
+            "workers": 4,
+            "worker_module" : "aicemeterytask",
+            "worker_class": "AICemetery",
+            "source_topic": "TOPIC_MODEL_CEMETERY",
+            "target_topic_groups": [
+                []
+            ],
+            "worker_capacity": 5
+        }
+    }
+}

@@ -1,0 +1,11 @@
+certifi==2022.6.15
+charset-normalizer==2.0.12
+idna==3.3
+psycopg2==2.9.3
+requests==2.27.1
+urllib3==1.26.11
+pytest
+kafka-python
+scikit-learn
+tensorflow
+pyjwt

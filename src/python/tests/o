@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.10.0, pytest-7.1.1, pluggy-1.0.0
+rootdir: /Users/arifbilgin/workspace/brain/brain/src/python
+collected 2 items
+
+test_aitrader.py .F                                                      [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_trader_task _______________________________
+
+    def test_trader_task ():
+        begin_time = time.time_ns()
+        number_iteration = 22
+        number_of_networks = len(test_data)
+>       with patch("aitradetask.config.current_time", wraps=time_generator) as mock_obj:
+
+test_aitrader.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/mock.py:1422: in __enter__
+    self.target = self.getter()
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/mock.py:1609: in <lambda>
+    getter = lambda: _importer(target)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+target = 'aitradetask.config'
+
+    def _importer(target):
+        components = target.split('.')
+        import_path = components.pop(0)
+>       thing = __import__(import_path)
+E       ModuleNotFoundError: No module named 'aitradetask'
+
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/mock.py:1248: ModuleNotFoundError
+=============================== warnings summary ===============================
+../../../../../../../../Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/tensorflow/__init__.py:29
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/tensorflow/__init__.py:29: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+    import distutils as _distutils
+
+../../../../../../../../Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flatbuffers/compat.py:19
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flatbuffers/compat.py:19: DeprecationWarning: the imp module is deprecated in favour of importlib and slated for removal in Python 3.12; see the module's documentation for alternative uses
+    import imp
+
+../core/aidataport.py:2
+  /Users/arifbilgin/workspace/brain/brain/src/python/core/aidataport.py:2: PendingDeprecationWarning: lib2to3 package is deprecated and may not be able to parse Python 3.10+
+    from lib2to3.pygram import Symbols
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test_aitrader.py::test_trader_task - ModuleNotFoundError: No module na...
+=================== 1 failed, 1 passed, 3 warnings in 3.66s ====================

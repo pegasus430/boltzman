@@ -1,0 +1,10 @@
+In order to install psql-docker make sure that network "boltzman" exists in docker env.
+To see all networks available networks run `docker network ls`
+If "boltzman" is not in the list Create it before spinning psql container by running:
+`docker network create -d bridge boltzman`
+
+PSQL schema is defined in sql/init_db.sql file. Remember this is just a delta sql being run on top of db_backup script
+If you need to change schema do it in init_db.sql
+
+
+

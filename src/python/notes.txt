@@ -1,0 +1,16 @@
+Remove all docker images that are not running:
+docker image prune -a --force
+
+
+To run doc generator 
+pdoc --http localhost:8080 aiapi.py
+
+
+add parent_id to service table 
+implement node type in it
+
+to run document server
+pdoc --http localhost:8080 aiapi.py
+
+LOOK AT THE COMMIT BUSINESS FOR INSERT ETC I ADDED A COMMIT IN CODE BUT NOT SURE HOW IT WORKS WITH TRANSCTONAL STUFF
+

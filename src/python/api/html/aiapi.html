@@ -1,0 +1,1619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>aiapi API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>aiapi</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from time import sleep
+from utils.aiutils import make_sure
+import json
+import docker
+from core.aibase import *
+from mutators.aimutator import AIMutator
+from core.ainetwork import AINetwork
+from genes.aigeneoutput import AIGeneOutput
+from genes.aigenelayers import AIGeneLayers
+from genes.aigeneinputlayer import AIGeneInputLayer
+from core.ainetwork import AINetwork, AINetworkStatus
+from utils.psqlutils import PsqlUtils
+from utils.kafkautils import KafkaUtils
+from exceptions.exceptions import *
+from functools import wraps
+import enum
+import pickle
+from config import config
+import uuid
+from pydoc import classname
+import datetime
+
+mutator = AIMutator()
+
+sql_utils = PsqlUtils()
+docker_client = docker.from_env()
+
+# service commands
+
+
+class AIServiceNotificationType(enum.Enum):
+    Shutdown = 1
+    Dispatch_Network = 2
+    ParkNetwork = 3
+    Ping = 4
+
+
+class AIApi(object):
+    def __init__(self):
+        self.class_name = &#34;AIApi&#34;
+        # load service class descriptions
+        f = open(&#34;../config/task_config.json&#34;)
+        self.task_defs = json.load(f)[&#39;tasks&#39;]
+        f.close()
+        self.consumer = None
+        self.producer = None
+
+    def getServiceSummary(self, service_class=None, include_networks=False):
+        &#39;&#39;&#39;
+            ## Description:
+            Returns an array service summary from database
+
+            ## service_class&lt;string&gt;: Type of services to list. e.g AITrainer
+            ## include_networks: if True returns network list too.
+            ```
+
+            ## Returns:
+            List of services.&lt;br&gt;
+            If includeNetworks is set to true, response object also returns an array of networks
+        &#39;&#39;&#39;
+        service_list = []
+        query = &#34;SELECT * FROM service&#34;
+        if (service_class):
+            query = query + f&#34; WHERE classname = &#39;{service_class}&#39;&#34;
+
+        for rec in (sql_utils.run_select_query(query)):
+            data = pickle.loads(rec[8])
+            val = {
+                &#34;id&#34;: rec[0],
+                &#34;service_id&#34;: rec[3],
+                &#34;service_class&#34;: rec[4],
+                &#34;network_count&#34;: len(data[&#39;networks&#39;])
+            }
+            if include_networks:
+                networks = []
+                for n in data[&#39;networks&#39;]:
+                    networks.append(n[&#34;network_id&#34;])
+
+                val[&#34;networks&#34;] = networks
+
+            service_list.append(val)
+
+        return service_list
+
+    def getNetworks(self, locations=None):
+        &#39;&#39;&#39;
+            Returns list of networks for given locations.
+            If locations are not sent , All networks are returned for the account
+        &#39;&#39;&#39;
+        networks = []
+        query = &#34;SELECT * FROM network&#34;
+        if (locations):
+            in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in locations])
+            query = query + f&#34; WHERE location in ({in_clause})&#34;
+
+        networks_to_return = []
+
+        for rec in (sql_utils.run_select_query(query)):
+            networks_to_return.append({
+                &#34;id&#34;: rec[0],
+                &#34;location&#34;: rec[3],
+                &#34;score&#34;: rec[5],
+                &#34;last_trained_time&#34;: rec[6],
+                &#34;model_file&#34;: rec[7]
+            })
+        return networks_to_return
+
+    def seedNetwork(self, target_topic = None):
+        &#34;&#34;&#34;Generates a baby network by using parameters defined above
+        &#34;&#34;&#34;
+        n = AINetwork(&#34;FB&#34;)
+
+        input_gene_params = []
+        for i in range(config.INITIAL_NETWORK_MIN_DP_COUNT, config.INITIAL_NETWORK_MAX_DP_COUNT):
+            input_gene_params.append({
+                &#34;symbol&#34;: mutator.random_symbol(),
+                &#34;aggregation&#34;: mutator.random_aggregation(6, 7),
+                &#34;size&#34;: mutator.random_number(config.INITIAL_NETWORK_MIN_DP_SIZE, config.INITIAL_NETWORK_MAX_DP_SIZE)
+            })
+        input_gene = AIGeneInputLayer(input_gene_params)
+        layer_gene_params = []
+        prev_layer_size = 0
+        for i in range(0, mutator.random_number(config.INITIAL_NETWORK_MIN_LAYER_COUNT, config.INITIAL_NETWORK_MAX_LAYER_COUNT)):
+            layer_size = mutator.random_number(
+                config.INITIAL_NETWORK_MIN_LAYER_SIZE, config.INITIAL_NETWORK_MAX_LAYER_SIZE,)
+            if (layer_size &gt; prev_layer_size) and prev_layer_size &gt; 0:
+                layer_size = prev_layer_size
+            layer_gene_params.append(layer_size)
+            prev_layer_size = layer_size
+
+        layer_gene = AIGeneLayers(layer_gene_params)
+        output_gene = AIGeneOutput(
+            mutator.random_number(2, 6), mutator.random_symbol())
+        n.add_children(input_gene, layer_gene, output_gene)
+        n.build_from_genes()
+        n.status = AINetworkStatus.Active
+        if target_topic:
+            n.post()
+            self._dispatch_network (n, target_topic)
+        else:
+            n.location = &#34;IDLE&#34;
+            n.post()
+
+        return n
+
+    def deleteNetworks(self, networks_to_delete: list):
+        &#39;&#39;&#39;
+            Deletes given idle networks from database. 
+            Networks that are not idle (either in a kafka topic or service) can not be deleted by executing this method.           
+        &#39;&#39;&#39;
+        make_sure(len(networks_to_delete) &gt; 0, &#34;No network id is specified.&#34;)
+        query = &#34;DELETE FROM network&#34;
+        in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in networks_to_delete])
+        query = query + f&#34; WHERE id in ({in_clause}) AND location =&#39;IDLE&#39;&#34;
+        sql_utils.run_no_result_query(query)
+
+    def removeNetworks(self, source_service_id, network_ids, topic_to_dispatch=None):
+        &#39;&#39;&#39;
+            ## Description:
+            deattach given networks from their services and pushed to the kafka topic specified.
+
+            ## Params:
+            ```
+            {
+                source_service_id: origin of the message being sent to service(s)
+                topic &lt;string&gt;: kafka topic to send networks after being dettached. if None Networks are parked at IDLE
+                networkIds []: array of network ids
+            }
+            ```
+
+            ## Returns:
+            ackknowledgement message:
+            {
+                ackToken: uuid
+            }
+        &#39;&#39;&#39;
+        query = &#39;&#39;&#39;
+            SELECT * FROM network INNER join service 
+            on network.location = service.serviceid 
+        &#39;&#39;&#39;
+        in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in network_ids])
+        query = query + f&#34; WHERE network.id in ({in_clause})&#34;
+        network_map = {}
+
+        for rec in sql_utils.run_select_query(query):
+            network_map[rec[0]] = rec
+
+        make_sure(set(network_map.keys()) == set(network_ids),
+                  f&#34;Network Ids are not all in services, requested: {network_ids}, in db: {list(network_map.keys())}&#34;)
+
+        # generate service notifications for each network
+        for id in network_map.keys():
+            target_service_id = network_map[id][3]
+            print(target_service_id)
+            self.sendNotification(source_service_id, target_service_id, AIServiceNotificationType.Dispatch_Network,
+                                   {&#34;topic&#34;: topic_to_dispatch, &#34;network_id&#34;: id})
+
+    def _cloneNetwork(self, network_to_clone, target_location = None):
+        new_network = network_to_clone.clone()
+        new_network.post()
+        if target_location:
+            self._dispatch_network(new_network, target_location)
+
+    
+    def cloneNetworks(self, network_ids, target_location=None):
+        for network_id in network_ids:
+            n = AINetwork()
+            n.load(network_id)
+            self._cloneNetwork(n, target_location)
+
+    def mutateNetworks(self, networks_to_mutate, target_location=None):
+        &#39;&#39;&#39;
+            ## Description:
+            clone given networks. If a topic is specified, cloned networks are sent to the given topic
+
+            ## Params:
+            ```
+            {
+                topic &lt;string&gt;: kafka topic to send networks
+                networkIds[]: array of networkIds to be cloned
+            }
+            ```
+
+            ## Returns:
+            ackknowledgement message:
+            {
+                networkIds[]: array of cloned networkIds in the same order as input.
+            }
+        &#39;&#39;&#39;
+        pass
+
+    def getNetworkDetails(self, network_id):
+        &#39;&#39;&#39;
+            ## Description:
+            returns network details for given network_id, throws exception if not found
+        &#39;&#39;&#39;
+        make_sure(isinstance(network_id, int), f&#34;Given network id is not valid. Expected an integer number&#34;)
+        n = AINetwork()
+        n.load(network_id)
+        return n.get_details()
+
+
+    def getPredictions(self, params):
+        pass
+
+    def getLocalServiceList(self):
+        &#39;&#39;&#39;
+            returns the list of running services locally to where api module is loaded.
+            Note that this is a base function and works with docker, not the db
+            if there is a mismatch between service status in db, call this function for the correct status
+        &#39;&#39;&#39;
+        containers = docker_client.containers.list()
+        service_list = []
+
+        for c in containers:
+            for t in c.image.attrs[&#39;RepoTags&#39;]:
+                tag_tokens = t.split(&#34;:&#34;)
+                if not (len(tag_tokens)) == 2:  # valid services should have a name and version
+                    continue
+                if not tag_tokens[0] in self.task_defs:
+                    continue
+                service_list.append(t)
+        return service_list
+
+    def spinService(self, taskName, version=None):
+        &#39;&#39;&#39;
+            Starts a local docker container with given taskName and version
+            If version is not provided , an image with &#34;latest&#34; is looked for
+            Returns container object if successfull
+        &#39;&#39;&#39;
+        if not version:
+            version = &#34;latest&#34;
+        # Check if it is a valid task class name
+        if not taskName in self.task_defs:
+            raise ServiceImageIsNotFound(
+                f&#34;Service {taskName}:{version} is not registered in task_config.json.&#34;)
+        # Check if docker image is available for taskName:version
+        for image in docker_client.images.list():
+            for image_text in image.tags:
+                if image_text == f&#34;{taskName}:{version}&#34;:
+                    service_id = str(uuid.uuid4())
+                    c = docker_client.containers.run(
+                        image,
+                        environment=[f&#34;SERVICE_ID={service_id}&#34;],
+                        network=&#34;boltzman&#34;,
+                        labels={&#34;service_id&#34;: service_id},
+                        init=True,
+                        volumes={config.MODEL_FILES_LOCATION: {
+                            &#39;bind&#39;: config.MODEL_FILES_LOCATION_IN_DOCKER, &#39;mode&#39;: &#39;rw&#39;}},
+                        name=service_id)
+                    return c
+
+        raise ServiceImageIsNotFound(
+            f&#34;Service {taskName}:{version} does not exist.&#34;)
+
+    def pauseService(self, service_id):
+        &#39;&#39;&#39;
+            Pauses the service container forcefully via docker api.
+            DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+            SERVICES ARE USUALLY TIMESTAMP SENSITIVE AND DOCKER LEVEL PAUSE MIGHT CONFLICT WITH CERTAIN LOGICS
+        &#39;&#39;&#39;
+        self._sendCommand(service_id, &#34;REQUEST_SERVICE_PAUSE&#34;, {
+                          &#34;service_id&#34;: service_id})
+
+    def stopService(self, service_id):
+        &#39;&#39;&#39;
+            Stops the service container forcefully via docker api.
+            DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+        &#39;&#39;&#39;
+        containers = docker_client.containers.list()
+
+        for c in containers:
+            if &#34;service_id&#34; in c.labels:
+                if c.labels[&#34;service_id&#34;] == service_id:
+                    print(f&#34;stopping container : {service_id}&#34;)
+                    c.stop()
+
+    def requestPauseService(self, service_id):
+        &#39;&#39;&#39;
+            Asks the given service container to pause gracefully.
+            The result of this call can be harvested from service_notifications by querying its status periodically
+        &#39;&#39;&#39;
+        self._sendCommand(service_id, &#34;REQUEST_SERVICE_PAUSE&#34;, {
+                          &#34;service_id&#34;: service_id})
+
+    def requestStopService(self, source, service_id):
+        &#39;&#39;&#39;
+            Asks the given service container to stop gracefully.
+            The result of this call can be harvested from service_notifications by querying its status periodically
+        &#39;&#39;&#39;
+        self.sendNotification(source, service_id, AIServiceNotificationType.Shutdown, {
+                               &#34;service_id&#34;: service_id})
+
+    def listServiceClasses(self):
+        &#39;&#39;&#39;
+            ## Description:
+            Returns the service class decriptions
+
+            ## Returns:
+            an object wrapping service class definitions
+        &#39;&#39;&#39;
+        return self.task_defs
+
+    def sendNotification(self, source_service_id, target_service_id, notification_type: AIServiceNotificationType, params):
+        &#39;&#39;&#39;
+        CREATE TABLE commands (
+        id SERIAL PRIMARY KEY,
+        serviceId text, -- target service for the command
+        timestamp int,
+        command text , -- command to send to the service
+        status int DEFAULT 0, -- status of the command 0: initial 1:pending 2: executed 3:failed
+        error text, -- error message returned from service if status is 3 (failed)
+        body  BYTEA -- reserved for extra parameters
+        ); 
+        &#39;&#39;&#39;
+        sql_utils.begin()
+        sql_utils.insert(&#39;notifications&#39;, {
+            &#34;sourceServiceId&#34;: source_service_id,
+            &#34;targetServiceId&#34;: target_service_id,
+            &#34;timestamp&#34;: int(datetime.datetime.now().timestamp()),
+            &#34;notification&#34;: notification_type.value,
+            &#34;status&#34;: 0,
+            &#34;body&#34;: json.dumps(params)
+        })
+        sql_utils.commit()
+
+    def purgeServiceCommands(self, service_id):
+        &#39;&#39;&#39;
+            removes all commands associated for given service_id
+            It should only be used if service crashed to cleanup
+            zombie commands have no affect on anything except cluttering the database
+        &#39;&#39;&#39;
+        sql_utils.begin()
+        sql_utils.update(&#34;commands&#34;, {&#34;status&#34;: -1}, {&#34;serviceId&#34;: service_id})
+        sql_utils.commit()
+
+    def update_service_status(self, data):
+        &#39;&#39;&#39;
+            Persist service and status log status to db
+            This function does 2 things:
+            1- Update service status in service table
+            2- Inserts status log to statuslogs table
+        &#39;&#39;&#39;
+        SERVICE_TABLE = &#34;service&#34;
+
+        sql_utils.begin()
+        deseri_obj = pickle.dumps(data)
+        record = {&#34;timestamp&#34;: 0,
+                  &#34;serviceId&#34;: data[&#34;service_id&#34;],
+                  &#34;className&#34;: data[&#34;class_name&#34;],
+                  &#34;status&#34;: data[&#34;status&#34;],
+                  &#34;upSince&#34;: data[&#34;up_since&#34;],
+                  &#34;networkCount&#34;: data[&#34;number_of_networks&#34;],
+                  &#34;body&#34;: deseri_obj}
+        if not sql_utils.check_if_record_exists(SERVICE_TABLE, data[&#34;service_id&#34;], &#34;serviceid&#34;):
+            self.record_id = sql_utils.insert(SERVICE_TABLE, record)
+        else:
+            sql_utils.update(SERVICE_TABLE, record, {
+                             &#34;serviceId&#34;: data[&#34;service_id&#34;]})
+
+        sql_utils.commit()
+
+    def _dispatch_network(self, network:AINetwork, topic):
+        &#34;&#34;&#34;dispatches given network to given topics. 
+
+        Args:
+            network_id (int): network id
+            topic (string]): topic to dispatch network
+        &#34;&#34;&#34;
+        if not self.producer:
+            self.kafka_utils = KafkaUtils()
+            self.producer = self.kafka_utils.get_producer()
+        msg = json.dumps({&#34;rec_id&#34;: network.record_id}).encode(&#39;utf-8&#39;)
+        self.producer.send(topic, msg)
+        self.producer.flush()
+        network.location = topic
+        network.post()
+
+
+    def _dispatch_network_with_id(self, network_id, topic):
+        &#34;&#34;&#34;dispatches given network to given topics. 
+
+        Args:
+            network_id (int): network id
+            topic (string]): topic to dispatch network
+        &#34;&#34;&#34;
+        network = AINetwork()
+        print(f&#34;Network Id: {network_id}&#34;)
+        network.load(network_id)
+        if not self.producer:
+            self.kafka_utils = KafkaUtils()
+            self.producer = self.kafka_utils.get_producer()
+        msg = json.dumps({&#34;rec_id&#34;: network.record_id}).encode(&#39;utf-8&#39;)
+        self.producer.send(topic, msg)
+        self.producer.flush()
+        network.location = topic
+        network.post()
+
+    def fix_zombies(self):
+        container_names = []
+        for container in docker_client.containers.list():
+            container_names.append(container.name)
+        # Clean up networks
+        for rec in (sql_utils.run_select_query(
+            &#39;&#39;&#39;
+            SELECT * FROM network; 
+            &#39;&#39;&#39;
+        )):
+            current_location = rec[3]
+            if not current_location in container_names and not current_location in config.KAFKA_TOPICS.keys():  # zombie
+                self._dispatch_network_with_id(
+                    rec[0], config.KAFKA_TOPICS[&#34;TOPIC_MODEL_NEEDS_TRAINING&#34;])
+        # Clean up networks
+        for rec in (sql_utils.run_select_query(
+            &#39;&#39;&#39;
+            SELECT * FROM service; 
+            &#39;&#39;&#39;
+        )):
+            service_id = rec[3]
+            if not service_id in container_names:
+                sql_utils.delete_record(&#34;service&#34;, rec[0])
+
+if __name__ == &#34;__main__&#34;:
+    api = AIApi()
+    # api._sendCommand (&#34;000001&#34;, &#34;DELETE_NETWORK&#34;, {
+    #    &#34;serviceId&#34; : 100
+    # })
+    #print (api.getServiceSummary(service_class=&#39;AITrainer&#39;, include_networks=True))
+    #print (api.listServiceClasses())
+    #api.spinService(&#34;trainer&#34;, &#34;1.0.2&#34;)
+#    api.stopService(&#34;bluh&#34;)
+    # api.fix_zombies()
+    #print (api.getNetworks([&#34;IDLE&#34;, &#34;loc2&#34;]))
+    api.requestStopService(&#34;source_service_id&#34;, &#34;Trainer_1&#34;)
+    #n = api.seedNetwork(config.KAFKA_TOPICS[&#34;TOPIC_MODEL_NEEDS_TRAINING&#34;])
+    #sleep(5)
+    #api.removeNetworks(&#34;24c3ad06-37cc-42ce-815b-e8037bccefd9&#34;, [69], [config.KAFKA_TOPICS[&#34;TOPIC_MODEL_NEEDS_TRAINING&#34;]])
+    #api.removeNetworks(&#34;Trainer_1&#34;,[45])
+    #api.cloneNetworks([69, 70], config.KAFKA_TOPICS[&#34;TOPIC_MODEL_NEEDS_TRAINING&#34;])
+
+# unzip -n python_libs.zip -d /usr/local/lib</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="aiapi.AIApi"><code class="flex name class">
+<span>class <span class="ident">AIApi</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class AIApi(object):
+    def __init__(self):
+        self.class_name = &#34;AIApi&#34;
+        # load service class descriptions
+        f = open(&#34;../config/task_config.json&#34;)
+        self.task_defs = json.load(f)[&#39;tasks&#39;]
+        f.close()
+        self.consumer = None
+        self.producer = None
+
+    def getServiceSummary(self, service_class=None, include_networks=False):
+        &#39;&#39;&#39;
+            ## Description:
+            Returns an array service summary from database
+
+            ## service_class&lt;string&gt;: Type of services to list. e.g AITrainer
+            ## include_networks: if True returns network list too.
+            ```
+
+            ## Returns:
+            List of services.&lt;br&gt;
+            If includeNetworks is set to true, response object also returns an array of networks
+        &#39;&#39;&#39;
+        service_list = []
+        query = &#34;SELECT * FROM service&#34;
+        if (service_class):
+            query = query + f&#34; WHERE classname = &#39;{service_class}&#39;&#34;
+
+        for rec in (sql_utils.run_select_query(query)):
+            data = pickle.loads(rec[8])
+            val = {
+                &#34;id&#34;: rec[0],
+                &#34;service_id&#34;: rec[3],
+                &#34;service_class&#34;: rec[4],
+                &#34;network_count&#34;: len(data[&#39;networks&#39;])
+            }
+            if include_networks:
+                networks = []
+                for n in data[&#39;networks&#39;]:
+                    networks.append(n[&#34;network_id&#34;])
+
+                val[&#34;networks&#34;] = networks
+
+            service_list.append(val)
+
+        return service_list
+
+    def getNetworks(self, locations=None):
+        &#39;&#39;&#39;
+            Returns list of networks for given locations.
+            If locations are not sent , All networks are returned for the account
+        &#39;&#39;&#39;
+        networks = []
+        query = &#34;SELECT * FROM network&#34;
+        if (locations):
+            in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in locations])
+            query = query + f&#34; WHERE location in ({in_clause})&#34;
+
+        networks_to_return = []
+
+        for rec in (sql_utils.run_select_query(query)):
+            networks_to_return.append({
+                &#34;id&#34;: rec[0],
+                &#34;location&#34;: rec[3],
+                &#34;score&#34;: rec[5],
+                &#34;last_trained_time&#34;: rec[6],
+                &#34;model_file&#34;: rec[7]
+            })
+        return networks_to_return
+
+    def seedNetwork(self, target_topic = None):
+        &#34;&#34;&#34;Generates a baby network by using parameters defined above
+        &#34;&#34;&#34;
+        n = AINetwork(&#34;FB&#34;)
+
+        input_gene_params = []
+        for i in range(config.INITIAL_NETWORK_MIN_DP_COUNT, config.INITIAL_NETWORK_MAX_DP_COUNT):
+            input_gene_params.append({
+                &#34;symbol&#34;: mutator.random_symbol(),
+                &#34;aggregation&#34;: mutator.random_aggregation(6, 7),
+                &#34;size&#34;: mutator.random_number(config.INITIAL_NETWORK_MIN_DP_SIZE, config.INITIAL_NETWORK_MAX_DP_SIZE)
+            })
+        input_gene = AIGeneInputLayer(input_gene_params)
+        layer_gene_params = []
+        prev_layer_size = 0
+        for i in range(0, mutator.random_number(config.INITIAL_NETWORK_MIN_LAYER_COUNT, config.INITIAL_NETWORK_MAX_LAYER_COUNT)):
+            layer_size = mutator.random_number(
+                config.INITIAL_NETWORK_MIN_LAYER_SIZE, config.INITIAL_NETWORK_MAX_LAYER_SIZE,)
+            if (layer_size &gt; prev_layer_size) and prev_layer_size &gt; 0:
+                layer_size = prev_layer_size
+            layer_gene_params.append(layer_size)
+            prev_layer_size = layer_size
+
+        layer_gene = AIGeneLayers(layer_gene_params)
+        output_gene = AIGeneOutput(
+            mutator.random_number(2, 6), mutator.random_symbol())
+        n.add_children(input_gene, layer_gene, output_gene)
+        n.build_from_genes()
+        n.status = AINetworkStatus.Active
+        if target_topic:
+            n.post()
+            self._dispatch_network (n, target_topic)
+        else:
+            n.location = &#34;IDLE&#34;
+            n.post()
+
+        return n
+
+    def deleteNetworks(self, networks_to_delete: list):
+        &#39;&#39;&#39;
+            Deletes given idle networks from database. 
+            Networks that are not idle (either in a kafka topic or service) can not be deleted by executing this method.           
+        &#39;&#39;&#39;
+        make_sure(len(networks_to_delete) &gt; 0, &#34;No network id is specified.&#34;)
+        query = &#34;DELETE FROM network&#34;
+        in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in networks_to_delete])
+        query = query + f&#34; WHERE id in ({in_clause}) AND location =&#39;IDLE&#39;&#34;
+        sql_utils.run_no_result_query(query)
+
+    def removeNetworks(self, source_service_id, network_ids, topic_to_dispatch=None):
+        &#39;&#39;&#39;
+            ## Description:
+            deattach given networks from their services and pushed to the kafka topic specified.
+
+            ## Params:
+            ```
+            {
+                source_service_id: origin of the message being sent to service(s)
+                topic &lt;string&gt;: kafka topic to send networks after being dettached. if None Networks are parked at IDLE
+                networkIds []: array of network ids
+            }
+            ```
+
+            ## Returns:
+            ackknowledgement message:
+            {
+                ackToken: uuid
+            }
+        &#39;&#39;&#39;
+        query = &#39;&#39;&#39;
+            SELECT * FROM network INNER join service 
+            on network.location = service.serviceid 
+        &#39;&#39;&#39;
+        in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in network_ids])
+        query = query + f&#34; WHERE network.id in ({in_clause})&#34;
+        network_map = {}
+
+        for rec in sql_utils.run_select_query(query):
+            network_map[rec[0]] = rec
+
+        make_sure(set(network_map.keys()) == set(network_ids),
+                  f&#34;Network Ids are not all in services, requested: {network_ids}, in db: {list(network_map.keys())}&#34;)
+
+        # generate service notifications for each network
+        for id in network_map.keys():
+            target_service_id = network_map[id][3]
+            print(target_service_id)
+            self.sendNotification(source_service_id, target_service_id, AIServiceNotificationType.Dispatch_Network,
+                                   {&#34;topic&#34;: topic_to_dispatch, &#34;network_id&#34;: id})
+
+    def _cloneNetwork(self, network_to_clone, target_location = None):
+        new_network = network_to_clone.clone()
+        new_network.post()
+        if target_location:
+            self._dispatch_network(new_network, target_location)
+
+    
+    def cloneNetworks(self, network_ids, target_location=None):
+        for network_id in network_ids:
+            n = AINetwork()
+            n.load(network_id)
+            self._cloneNetwork(n, target_location)
+
+    def mutateNetworks(self, networks_to_mutate, target_location=None):
+        &#39;&#39;&#39;
+            ## Description:
+            clone given networks. If a topic is specified, cloned networks are sent to the given topic
+
+            ## Params:
+            ```
+            {
+                topic &lt;string&gt;: kafka topic to send networks
+                networkIds[]: array of networkIds to be cloned
+            }
+            ```
+
+            ## Returns:
+            ackknowledgement message:
+            {
+                networkIds[]: array of cloned networkIds in the same order as input.
+            }
+        &#39;&#39;&#39;
+        pass
+
+    def getNetworkDetails(self, network_id):
+        &#39;&#39;&#39;
+            ## Description:
+            returns network details for given network_id, throws exception if not found
+        &#39;&#39;&#39;
+        make_sure(isinstance(network_id, int), f&#34;Given network id is not valid. Expected an integer number&#34;)
+        n = AINetwork()
+        n.load(network_id)
+        return n.get_details()
+
+
+    def getPredictions(self, params):
+        pass
+
+    def getLocalServiceList(self):
+        &#39;&#39;&#39;
+            returns the list of running services locally to where api module is loaded.
+            Note that this is a base function and works with docker, not the db
+            if there is a mismatch between service status in db, call this function for the correct status
+        &#39;&#39;&#39;
+        containers = docker_client.containers.list()
+        service_list = []
+
+        for c in containers:
+            for t in c.image.attrs[&#39;RepoTags&#39;]:
+                tag_tokens = t.split(&#34;:&#34;)
+                if not (len(tag_tokens)) == 2:  # valid services should have a name and version
+                    continue
+                if not tag_tokens[0] in self.task_defs:
+                    continue
+                service_list.append(t)
+        return service_list
+
+    def spinService(self, taskName, version=None):
+        &#39;&#39;&#39;
+            Starts a local docker container with given taskName and version
+            If version is not provided , an image with &#34;latest&#34; is looked for
+            Returns container object if successfull
+        &#39;&#39;&#39;
+        if not version:
+            version = &#34;latest&#34;
+        # Check if it is a valid task class name
+        if not taskName in self.task_defs:
+            raise ServiceImageIsNotFound(
+                f&#34;Service {taskName}:{version} is not registered in task_config.json.&#34;)
+        # Check if docker image is available for taskName:version
+        for image in docker_client.images.list():
+            for image_text in image.tags:
+                if image_text == f&#34;{taskName}:{version}&#34;:
+                    service_id = str(uuid.uuid4())
+                    c = docker_client.containers.run(
+                        image,
+                        environment=[f&#34;SERVICE_ID={service_id}&#34;],
+                        network=&#34;boltzman&#34;,
+                        labels={&#34;service_id&#34;: service_id},
+                        init=True,
+                        volumes={config.MODEL_FILES_LOCATION: {
+                            &#39;bind&#39;: config.MODEL_FILES_LOCATION_IN_DOCKER, &#39;mode&#39;: &#39;rw&#39;}},
+                        name=service_id)
+                    return c
+
+        raise ServiceImageIsNotFound(
+            f&#34;Service {taskName}:{version} does not exist.&#34;)
+
+    def pauseService(self, service_id):
+        &#39;&#39;&#39;
+            Pauses the service container forcefully via docker api.
+            DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+            SERVICES ARE USUALLY TIMESTAMP SENSITIVE AND DOCKER LEVEL PAUSE MIGHT CONFLICT WITH CERTAIN LOGICS
+        &#39;&#39;&#39;
+        self._sendCommand(service_id, &#34;REQUEST_SERVICE_PAUSE&#34;, {
+                          &#34;service_id&#34;: service_id})
+
+    def stopService(self, service_id):
+        &#39;&#39;&#39;
+            Stops the service container forcefully via docker api.
+            DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+        &#39;&#39;&#39;
+        containers = docker_client.containers.list()
+
+        for c in containers:
+            if &#34;service_id&#34; in c.labels:
+                if c.labels[&#34;service_id&#34;] == service_id:
+                    print(f&#34;stopping container : {service_id}&#34;)
+                    c.stop()
+
+    def requestPauseService(self, service_id):
+        &#39;&#39;&#39;
+            Asks the given service container to pause gracefully.
+            The result of this call can be harvested from service_notifications by querying its status periodically
+        &#39;&#39;&#39;
+        self._sendCommand(service_id, &#34;REQUEST_SERVICE_PAUSE&#34;, {
+                          &#34;service_id&#34;: service_id})
+
+    def requestStopService(self, source, service_id):
+        &#39;&#39;&#39;
+            Asks the given service container to stop gracefully.
+            The result of this call can be harvested from service_notifications by querying its status periodically
+        &#39;&#39;&#39;
+        self.sendNotification(source, service_id, AIServiceNotificationType.Shutdown, {
+                               &#34;service_id&#34;: service_id})
+
+    def listServiceClasses(self):
+        &#39;&#39;&#39;
+            ## Description:
+            Returns the service class decriptions
+
+            ## Returns:
+            an object wrapping service class definitions
+        &#39;&#39;&#39;
+        return self.task_defs
+
+    def sendNotification(self, source_service_id, target_service_id, notification_type: AIServiceNotificationType, params):
+        &#39;&#39;&#39;
+        CREATE TABLE commands (
+        id SERIAL PRIMARY KEY,
+        serviceId text, -- target service for the command
+        timestamp int,
+        command text , -- command to send to the service
+        status int DEFAULT 0, -- status of the command 0: initial 1:pending 2: executed 3:failed
+        error text, -- error message returned from service if status is 3 (failed)
+        body  BYTEA -- reserved for extra parameters
+        ); 
+        &#39;&#39;&#39;
+        sql_utils.begin()
+        sql_utils.insert(&#39;notifications&#39;, {
+            &#34;sourceServiceId&#34;: source_service_id,
+            &#34;targetServiceId&#34;: target_service_id,
+            &#34;timestamp&#34;: int(datetime.datetime.now().timestamp()),
+            &#34;notification&#34;: notification_type.value,
+            &#34;status&#34;: 0,
+            &#34;body&#34;: json.dumps(params)
+        })
+        sql_utils.commit()
+
+    def purgeServiceCommands(self, service_id):
+        &#39;&#39;&#39;
+            removes all commands associated for given service_id
+            It should only be used if service crashed to cleanup
+            zombie commands have no affect on anything except cluttering the database
+        &#39;&#39;&#39;
+        sql_utils.begin()
+        sql_utils.update(&#34;commands&#34;, {&#34;status&#34;: -1}, {&#34;serviceId&#34;: service_id})
+        sql_utils.commit()
+
+    def update_service_status(self, data):
+        &#39;&#39;&#39;
+            Persist service and status log status to db
+            This function does 2 things:
+            1- Update service status in service table
+            2- Inserts status log to statuslogs table
+        &#39;&#39;&#39;
+        SERVICE_TABLE = &#34;service&#34;
+
+        sql_utils.begin()
+        deseri_obj = pickle.dumps(data)
+        record = {&#34;timestamp&#34;: 0,
+                  &#34;serviceId&#34;: data[&#34;service_id&#34;],
+                  &#34;className&#34;: data[&#34;class_name&#34;],
+                  &#34;status&#34;: data[&#34;status&#34;],
+                  &#34;upSince&#34;: data[&#34;up_since&#34;],
+                  &#34;networkCount&#34;: data[&#34;number_of_networks&#34;],
+                  &#34;body&#34;: deseri_obj}
+        if not sql_utils.check_if_record_exists(SERVICE_TABLE, data[&#34;service_id&#34;], &#34;serviceid&#34;):
+            self.record_id = sql_utils.insert(SERVICE_TABLE, record)
+        else:
+            sql_utils.update(SERVICE_TABLE, record, {
+                             &#34;serviceId&#34;: data[&#34;service_id&#34;]})
+
+        sql_utils.commit()
+
+    def _dispatch_network(self, network:AINetwork, topic):
+        &#34;&#34;&#34;dispatches given network to given topics. 
+
+        Args:
+            network_id (int): network id
+            topic (string]): topic to dispatch network
+        &#34;&#34;&#34;
+        if not self.producer:
+            self.kafka_utils = KafkaUtils()
+            self.producer = self.kafka_utils.get_producer()
+        msg = json.dumps({&#34;rec_id&#34;: network.record_id}).encode(&#39;utf-8&#39;)
+        self.producer.send(topic, msg)
+        self.producer.flush()
+        network.location = topic
+        network.post()
+
+
+    def _dispatch_network_with_id(self, network_id, topic):
+        &#34;&#34;&#34;dispatches given network to given topics. 
+
+        Args:
+            network_id (int): network id
+            topic (string]): topic to dispatch network
+        &#34;&#34;&#34;
+        network = AINetwork()
+        print(f&#34;Network Id: {network_id}&#34;)
+        network.load(network_id)
+        if not self.producer:
+            self.kafka_utils = KafkaUtils()
+            self.producer = self.kafka_utils.get_producer()
+        msg = json.dumps({&#34;rec_id&#34;: network.record_id}).encode(&#39;utf-8&#39;)
+        self.producer.send(topic, msg)
+        self.producer.flush()
+        network.location = topic
+        network.post()
+
+    def fix_zombies(self):
+        container_names = []
+        for container in docker_client.containers.list():
+            container_names.append(container.name)
+        # Clean up networks
+        for rec in (sql_utils.run_select_query(
+            &#39;&#39;&#39;
+            SELECT * FROM network; 
+            &#39;&#39;&#39;
+        )):
+            current_location = rec[3]
+            if not current_location in container_names and not current_location in config.KAFKA_TOPICS.keys():  # zombie
+                self._dispatch_network_with_id(
+                    rec[0], config.KAFKA_TOPICS[&#34;TOPIC_MODEL_NEEDS_TRAINING&#34;])
+        # Clean up networks
+        for rec in (sql_utils.run_select_query(
+            &#39;&#39;&#39;
+            SELECT * FROM service; 
+            &#39;&#39;&#39;
+        )):
+            service_id = rec[3]
+            if not service_id in container_names:
+                sql_utils.delete_record(&#34;service&#34;, rec[0])</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="aiapi.AIApi.cloneNetworks"><code class="name flex">
+<span>def <span class="ident">cloneNetworks</span></span>(<span>self, network_ids, target_location=None)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def cloneNetworks(self, network_ids, target_location=None):
+    for network_id in network_ids:
+        n = AINetwork()
+        n.load(network_id)
+        self._cloneNetwork(n, target_location)</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.deleteNetworks"><code class="name flex">
+<span>def <span class="ident">deleteNetworks</span></span>(<span>self, networks_to_delete: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Deletes given idle networks from database.
+Networks that are not idle (either in a kafka topic or service) can not be deleted by executing this method.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def deleteNetworks(self, networks_to_delete: list):
+    &#39;&#39;&#39;
+        Deletes given idle networks from database. 
+        Networks that are not idle (either in a kafka topic or service) can not be deleted by executing this method.           
+    &#39;&#39;&#39;
+    make_sure(len(networks_to_delete) &gt; 0, &#34;No network id is specified.&#34;)
+    query = &#34;DELETE FROM network&#34;
+    in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in networks_to_delete])
+    query = query + f&#34; WHERE id in ({in_clause}) AND location =&#39;IDLE&#39;&#34;
+    sql_utils.run_no_result_query(query)</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.fix_zombies"><code class="name flex">
+<span>def <span class="ident">fix_zombies</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fix_zombies(self):
+    container_names = []
+    for container in docker_client.containers.list():
+        container_names.append(container.name)
+    # Clean up networks
+    for rec in (sql_utils.run_select_query(
+        &#39;&#39;&#39;
+        SELECT * FROM network; 
+        &#39;&#39;&#39;
+    )):
+        current_location = rec[3]
+        if not current_location in container_names and not current_location in config.KAFKA_TOPICS.keys():  # zombie
+            self._dispatch_network_with_id(
+                rec[0], config.KAFKA_TOPICS[&#34;TOPIC_MODEL_NEEDS_TRAINING&#34;])
+    # Clean up networks
+    for rec in (sql_utils.run_select_query(
+        &#39;&#39;&#39;
+        SELECT * FROM service; 
+        &#39;&#39;&#39;
+    )):
+        service_id = rec[3]
+        if not service_id in container_names:
+            sql_utils.delete_record(&#34;service&#34;, rec[0])</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.getLocalServiceList"><code class="name flex">
+<span>def <span class="ident">getLocalServiceList</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>returns the list of running services locally to where api module is loaded.
+Note that this is a base function and works with docker, not the db
+if there is a mismatch between service status in db, call this function for the correct status</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getLocalServiceList(self):
+    &#39;&#39;&#39;
+        returns the list of running services locally to where api module is loaded.
+        Note that this is a base function and works with docker, not the db
+        if there is a mismatch between service status in db, call this function for the correct status
+    &#39;&#39;&#39;
+    containers = docker_client.containers.list()
+    service_list = []
+
+    for c in containers:
+        for t in c.image.attrs[&#39;RepoTags&#39;]:
+            tag_tokens = t.split(&#34;:&#34;)
+            if not (len(tag_tokens)) == 2:  # valid services should have a name and version
+                continue
+            if not tag_tokens[0] in self.task_defs:
+                continue
+            service_list.append(t)
+    return service_list</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.getNetworkDetails"><code class="name flex">
+<span>def <span class="ident">getNetworkDetails</span></span>(<span>self, network_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description:</h2>
+<p>returns network details for given network_id, throws exception if not found</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getNetworkDetails(self, network_id):
+    &#39;&#39;&#39;
+        ## Description:
+        returns network details for given network_id, throws exception if not found
+    &#39;&#39;&#39;
+    make_sure(isinstance(network_id, int), f&#34;Given network id is not valid. Expected an integer number&#34;)
+    n = AINetwork()
+    n.load(network_id)
+    return n.get_details()</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.getNetworks"><code class="name flex">
+<span>def <span class="ident">getNetworks</span></span>(<span>self, locations=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns list of networks for given locations.
+If locations are not sent , All networks are returned for the account</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getNetworks(self, locations=None):
+    &#39;&#39;&#39;
+        Returns list of networks for given locations.
+        If locations are not sent , All networks are returned for the account
+    &#39;&#39;&#39;
+    networks = []
+    query = &#34;SELECT * FROM network&#34;
+    if (locations):
+        in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in locations])
+        query = query + f&#34; WHERE location in ({in_clause})&#34;
+
+    networks_to_return = []
+
+    for rec in (sql_utils.run_select_query(query)):
+        networks_to_return.append({
+            &#34;id&#34;: rec[0],
+            &#34;location&#34;: rec[3],
+            &#34;score&#34;: rec[5],
+            &#34;last_trained_time&#34;: rec[6],
+            &#34;model_file&#34;: rec[7]
+        })
+    return networks_to_return</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.getPredictions"><code class="name flex">
+<span>def <span class="ident">getPredictions</span></span>(<span>self, params)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getPredictions(self, params):
+    pass</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.getServiceSummary"><code class="name flex">
+<span>def <span class="ident">getServiceSummary</span></span>(<span>self, service_class=None, include_networks=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description:</h2>
+<p>Returns an array service summary from database</p>
+<h2 id="service_class-type-of-services-to-list-eg-aitrainer">service_class<string>: Type of services to list. e.g AITrainer</h2>
+<h2 id="include_networks-if-true-returns-network-list-too">include_networks: if True returns network list too.</h2>
+<p>```</p>
+<h2 id="returns">Returns:</h2>
+<p>List of services.<br>
+If includeNetworks is set to true, response object also returns an array of networks</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getServiceSummary(self, service_class=None, include_networks=False):
+    &#39;&#39;&#39;
+        ## Description:
+        Returns an array service summary from database
+
+        ## service_class&lt;string&gt;: Type of services to list. e.g AITrainer
+        ## include_networks: if True returns network list too.
+        ```
+
+        ## Returns:
+        List of services.&lt;br&gt;
+        If includeNetworks is set to true, response object also returns an array of networks
+    &#39;&#39;&#39;
+    service_list = []
+    query = &#34;SELECT * FROM service&#34;
+    if (service_class):
+        query = query + f&#34; WHERE classname = &#39;{service_class}&#39;&#34;
+
+    for rec in (sql_utils.run_select_query(query)):
+        data = pickle.loads(rec[8])
+        val = {
+            &#34;id&#34;: rec[0],
+            &#34;service_id&#34;: rec[3],
+            &#34;service_class&#34;: rec[4],
+            &#34;network_count&#34;: len(data[&#39;networks&#39;])
+        }
+        if include_networks:
+            networks = []
+            for n in data[&#39;networks&#39;]:
+                networks.append(n[&#34;network_id&#34;])
+
+            val[&#34;networks&#34;] = networks
+
+        service_list.append(val)
+
+    return service_list</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.listServiceClasses"><code class="name flex">
+<span>def <span class="ident">listServiceClasses</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description:</h2>
+<p>Returns the service class decriptions</p>
+<h2 id="returns">Returns:</h2>
+<p>an object wrapping service class definitions</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def listServiceClasses(self):
+    &#39;&#39;&#39;
+        ## Description:
+        Returns the service class decriptions
+
+        ## Returns:
+        an object wrapping service class definitions
+    &#39;&#39;&#39;
+    return self.task_defs</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.mutateNetworks"><code class="name flex">
+<span>def <span class="ident">mutateNetworks</span></span>(<span>self, networks_to_mutate, target_location=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description:</h2>
+<p>clone given networks. If a topic is specified, cloned networks are sent to the given topic</p>
+<h2 id="params">Params:</h2>
+<pre><code>{
+    topic &lt;string&gt;: kafka topic to send networks
+    networkIds[]: array of networkIds to be cloned
+}
+</code></pre>
+<h2 id="returns">Returns:</h2>
+<p>ackknowledgement message:
+{
+networkIds[]: array of cloned networkIds in the same order as input.
+}</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mutateNetworks(self, networks_to_mutate, target_location=None):
+    &#39;&#39;&#39;
+        ## Description:
+        clone given networks. If a topic is specified, cloned networks are sent to the given topic
+
+        ## Params:
+        ```
+        {
+            topic &lt;string&gt;: kafka topic to send networks
+            networkIds[]: array of networkIds to be cloned
+        }
+        ```
+
+        ## Returns:
+        ackknowledgement message:
+        {
+            networkIds[]: array of cloned networkIds in the same order as input.
+        }
+    &#39;&#39;&#39;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.pauseService"><code class="name flex">
+<span>def <span class="ident">pauseService</span></span>(<span>self, service_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Pauses the service container forcefully via docker api.
+DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+SERVICES ARE USUALLY TIMESTAMP SENSITIVE AND DOCKER LEVEL PAUSE MIGHT CONFLICT WITH CERTAIN LOGICS</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pauseService(self, service_id):
+    &#39;&#39;&#39;
+        Pauses the service container forcefully via docker api.
+        DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+        SERVICES ARE USUALLY TIMESTAMP SENSITIVE AND DOCKER LEVEL PAUSE MIGHT CONFLICT WITH CERTAIN LOGICS
+    &#39;&#39;&#39;
+    self._sendCommand(service_id, &#34;REQUEST_SERVICE_PAUSE&#34;, {
+                      &#34;service_id&#34;: service_id})</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.removeNetworks"><code class="name flex">
+<span>def <span class="ident">removeNetworks</span></span>(<span>self, source_service_id, network_ids, topic_to_dispatch=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description:</h2>
+<p>deattach given networks from their services and pushed to the kafka topic specified.</p>
+<h2 id="params">Params:</h2>
+<pre><code>{
+    source_service_id: origin of the message being sent to service(s)
+    topic &lt;string&gt;: kafka topic to send networks after being dettached. if None Networks are parked at IDLE
+    networkIds []: array of network ids
+}
+</code></pre>
+<h2 id="returns">Returns:</h2>
+<p>ackknowledgement message:
+{
+ackToken: uuid
+}</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def removeNetworks(self, source_service_id, network_ids, topic_to_dispatch=None):
+    &#39;&#39;&#39;
+        ## Description:
+        deattach given networks from their services and pushed to the kafka topic specified.
+
+        ## Params:
+        ```
+        {
+            source_service_id: origin of the message being sent to service(s)
+            topic &lt;string&gt;: kafka topic to send networks after being dettached. if None Networks are parked at IDLE
+            networkIds []: array of network ids
+        }
+        ```
+
+        ## Returns:
+        ackknowledgement message:
+        {
+            ackToken: uuid
+        }
+    &#39;&#39;&#39;
+    query = &#39;&#39;&#39;
+        SELECT * FROM network INNER join service 
+        on network.location = service.serviceid 
+    &#39;&#39;&#39;
+    in_clause = &#34;,&#34;.join([f&#34;&#39;{x}&#39;&#34; for x in network_ids])
+    query = query + f&#34; WHERE network.id in ({in_clause})&#34;
+    network_map = {}
+
+    for rec in sql_utils.run_select_query(query):
+        network_map[rec[0]] = rec
+
+    make_sure(set(network_map.keys()) == set(network_ids),
+              f&#34;Network Ids are not all in services, requested: {network_ids}, in db: {list(network_map.keys())}&#34;)
+
+    # generate service notifications for each network
+    for id in network_map.keys():
+        target_service_id = network_map[id][3]
+        print(target_service_id)
+        self.sendNotification(source_service_id, target_service_id, AIServiceNotificationType.Dispatch_Network,
+                               {&#34;topic&#34;: topic_to_dispatch, &#34;network_id&#34;: id})</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.requestPauseService"><code class="name flex">
+<span>def <span class="ident">requestPauseService</span></span>(<span>self, service_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Asks the given service container to pause gracefully.
+The result of this call can be harvested from service_notifications by querying its status periodically</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def requestPauseService(self, service_id):
+    &#39;&#39;&#39;
+        Asks the given service container to pause gracefully.
+        The result of this call can be harvested from service_notifications by querying its status periodically
+    &#39;&#39;&#39;
+    self._sendCommand(service_id, &#34;REQUEST_SERVICE_PAUSE&#34;, {
+                      &#34;service_id&#34;: service_id})</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.requestStopService"><code class="name flex">
+<span>def <span class="ident">requestStopService</span></span>(<span>self, source, service_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Asks the given service container to stop gracefully.
+The result of this call can be harvested from service_notifications by querying its status periodically</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def requestStopService(self, source, service_id):
+    &#39;&#39;&#39;
+        Asks the given service container to stop gracefully.
+        The result of this call can be harvested from service_notifications by querying its status periodically
+    &#39;&#39;&#39;
+    self.sendNotification(source, service_id, AIServiceNotificationType.Shutdown, {
+                           &#34;service_id&#34;: service_id})</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.seedNetwork"><code class="name flex">
+<span>def <span class="ident">seedNetwork</span></span>(<span>self, target_topic=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generates a baby network by using parameters defined above</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def seedNetwork(self, target_topic = None):
+    &#34;&#34;&#34;Generates a baby network by using parameters defined above
+    &#34;&#34;&#34;
+    n = AINetwork(&#34;FB&#34;)
+
+    input_gene_params = []
+    for i in range(config.INITIAL_NETWORK_MIN_DP_COUNT, config.INITIAL_NETWORK_MAX_DP_COUNT):
+        input_gene_params.append({
+            &#34;symbol&#34;: mutator.random_symbol(),
+            &#34;aggregation&#34;: mutator.random_aggregation(6, 7),
+            &#34;size&#34;: mutator.random_number(config.INITIAL_NETWORK_MIN_DP_SIZE, config.INITIAL_NETWORK_MAX_DP_SIZE)
+        })
+    input_gene = AIGeneInputLayer(input_gene_params)
+    layer_gene_params = []
+    prev_layer_size = 0
+    for i in range(0, mutator.random_number(config.INITIAL_NETWORK_MIN_LAYER_COUNT, config.INITIAL_NETWORK_MAX_LAYER_COUNT)):
+        layer_size = mutator.random_number(
+            config.INITIAL_NETWORK_MIN_LAYER_SIZE, config.INITIAL_NETWORK_MAX_LAYER_SIZE,)
+        if (layer_size &gt; prev_layer_size) and prev_layer_size &gt; 0:
+            layer_size = prev_layer_size
+        layer_gene_params.append(layer_size)
+        prev_layer_size = layer_size
+
+    layer_gene = AIGeneLayers(layer_gene_params)
+    output_gene = AIGeneOutput(
+        mutator.random_number(2, 6), mutator.random_symbol())
+    n.add_children(input_gene, layer_gene, output_gene)
+    n.build_from_genes()
+    n.status = AINetworkStatus.Active
+    if target_topic:
+        n.post()
+        self._dispatch_network (n, target_topic)
+    else:
+        n.location = &#34;IDLE&#34;
+        n.post()
+
+    return n</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.spinService"><code class="name flex">
+<span>def <span class="ident">spinService</span></span>(<span>self, taskName, version=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Starts a local docker container with given taskName and version
+If version is not provided , an image with "latest" is looked for
+Returns container object if successfull</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def spinService(self, taskName, version=None):
+    &#39;&#39;&#39;
+        Starts a local docker container with given taskName and version
+        If version is not provided , an image with &#34;latest&#34; is looked for
+        Returns container object if successfull
+    &#39;&#39;&#39;
+    if not version:
+        version = &#34;latest&#34;
+    # Check if it is a valid task class name
+    if not taskName in self.task_defs:
+        raise ServiceImageIsNotFound(
+            f&#34;Service {taskName}:{version} is not registered in task_config.json.&#34;)
+    # Check if docker image is available for taskName:version
+    for image in docker_client.images.list():
+        for image_text in image.tags:
+            if image_text == f&#34;{taskName}:{version}&#34;:
+                service_id = str(uuid.uuid4())
+                c = docker_client.containers.run(
+                    image,
+                    environment=[f&#34;SERVICE_ID={service_id}&#34;],
+                    network=&#34;boltzman&#34;,
+                    labels={&#34;service_id&#34;: service_id},
+                    init=True,
+                    volumes={config.MODEL_FILES_LOCATION: {
+                        &#39;bind&#39;: config.MODEL_FILES_LOCATION_IN_DOCKER, &#39;mode&#39;: &#39;rw&#39;}},
+                    name=service_id)
+                return c
+
+    raise ServiceImageIsNotFound(
+        f&#34;Service {taskName}:{version} does not exist.&#34;)</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.stopService"><code class="name flex">
+<span>def <span class="ident">stopService</span></span>(<span>self, service_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stops the service container forcefully via docker api.
+DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stopService(self, service_id):
+    &#39;&#39;&#39;
+        Stops the service container forcefully via docker api.
+        DO NOT USE IT UNLESS YOU REALLY NEED TO USE IT
+    &#39;&#39;&#39;
+    containers = docker_client.containers.list()
+
+    for c in containers:
+        if &#34;service_id&#34; in c.labels:
+            if c.labels[&#34;service_id&#34;] == service_id:
+                print(f&#34;stopping container : {service_id}&#34;)
+                c.stop()</code></pre>
+</details>
+</dd>
+<dt id="aiapi.AIApi.update_service_status"><code class="name flex">
+<span>def <span class="ident">update_service_status</span></span>(<span>self, data)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Persist service and status log status to db
+This function does 2 things:
+1- Update service status in service table
+2- Inserts status log to statuslogs table</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_service_status(self, data):
+    &#39;&#39;&#39;
+        Persist service and status log status to db
+        This function does 2 things:
+        1- Update service status in service table
+        2- Inserts status log to statuslogs table
+    &#39;&#39;&#39;
+    SERVICE_TABLE = &#34;service&#34;
+
+    sql_utils.begin()
+    deseri_obj = pickle.dumps(data)
+    record = {&#34;timestamp&#34;: 0,
+              &#34;serviceId&#34;: data[&#34;service_id&#34;],
+              &#34;className&#34;: data[&#34;class_name&#34;],
+              &#34;status&#34;: data[&#34;status&#34;],
+              &#34;upSince&#34;: data[&#34;up_since&#34;],
+              &#34;networkCount&#34;: data[&#34;number_of_networks&#34;],
+              &#34;body&#34;: deseri_obj}
+    if not sql_utils.check_if_record_exists(SERVICE_TABLE, data[&#34;service_id&#34;], &#34;serviceid&#34;):
+        self.record_id = sql_utils.insert(SERVICE_TABLE, record)
+    else:
+        sql_utils.update(SERVICE_TABLE, record, {
+                         &#34;serviceId&#34;: data[&#34;service_id&#34;]})
+
+    sql_utils.commit()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="aiapi.AIServiceNotificationType"><code class="flex name class">
+<span>class <span class="ident">AIServiceNotificationType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class AIServiceNotificationType(enum.Enum):
+    Shutdown = 1
+    Dispatch_Network = 2
+    ParkNetwork = 3
+    Ping = 4</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="aiapi.AIServiceNotificationType.Dispatch_Network"><code class="name">var <span class="ident">Dispatch_Network</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="aiapi.AIServiceNotificationType.ParkNetwork"><code class="name">var <span class="ident">ParkNetwork</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="aiapi.AIServiceNotificationType.Ping"><code class="name">var <span class="ident">Ping</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="aiapi.AIServiceNotificationType.Shutdown"><code class="name">var <span class="ident">Shutdown</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="aiapi.AIApi" href="#aiapi.AIApi">AIApi</a></code></h4>
+<ul class="">
+<li><code><a title="aiapi.AIApi.cloneNetworks" href="#aiapi.AIApi.cloneNetworks">cloneNetworks</a></code></li>
+<li><code><a title="aiapi.AIApi.deleteNetworks" href="#aiapi.AIApi.deleteNetworks">deleteNetworks</a></code></li>
+<li><code><a title="aiapi.AIApi.fix_zombies" href="#aiapi.AIApi.fix_zombies">fix_zombies</a></code></li>
+<li><code><a title="aiapi.AIApi.getLocalServiceList" href="#aiapi.AIApi.getLocalServiceList">getLocalServiceList</a></code></li>
+<li><code><a title="aiapi.AIApi.getNetworkDetails" href="#aiapi.AIApi.getNetworkDetails">getNetworkDetails</a></code></li>
+<li><code><a title="aiapi.AIApi.getNetworks" href="#aiapi.AIApi.getNetworks">getNetworks</a></code></li>
+<li><code><a title="aiapi.AIApi.getPredictions" href="#aiapi.AIApi.getPredictions">getPredictions</a></code></li>
+<li><code><a title="aiapi.AIApi.getServiceSummary" href="#aiapi.AIApi.getServiceSummary">getServiceSummary</a></code></li>
+<li><code><a title="aiapi.AIApi.listServiceClasses" href="#aiapi.AIApi.listServiceClasses">listServiceClasses</a></code></li>
+<li><code><a title="aiapi.AIApi.mutateNetworks" href="#aiapi.AIApi.mutateNetworks">mutateNetworks</a></code></li>
+<li><code><a title="aiapi.AIApi.pauseService" href="#aiapi.AIApi.pauseService">pauseService</a></code></li>
+<li><code><a title="aiapi.AIApi.removeNetworks" href="#aiapi.AIApi.removeNetworks">removeNetworks</a></code></li>
+<li><code><a title="aiapi.AIApi.requestPauseService" href="#aiapi.AIApi.requestPauseService">requestPauseService</a></code></li>
+<li><code><a title="aiapi.AIApi.requestStopService" href="#aiapi.AIApi.requestStopService">requestStopService</a></code></li>
+<li><code><a title="aiapi.AIApi.seedNetwork" href="#aiapi.AIApi.seedNetwork">seedNetwork</a></code></li>
+<li><code><a title="aiapi.AIApi.spinService" href="#aiapi.AIApi.spinService">spinService</a></code></li>
+<li><code><a title="aiapi.AIApi.stopService" href="#aiapi.AIApi.stopService">stopService</a></code></li>
+<li><code><a title="aiapi.AIApi.update_service_status" href="#aiapi.AIApi.update_service_status">update_service_status</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="aiapi.AIServiceNotificationType" href="#aiapi.AIServiceNotificationType">AIServiceNotificationType</a></code></h4>
+<ul class="">
+<li><code><a title="aiapi.AIServiceNotificationType.Dispatch_Network" href="#aiapi.AIServiceNotificationType.Dispatch_Network">Dispatch_Network</a></code></li>
+<li><code><a title="aiapi.AIServiceNotificationType.ParkNetwork" href="#aiapi.AIServiceNotificationType.ParkNetwork">ParkNetwork</a></code></li>
+<li><code><a title="aiapi.AIServiceNotificationType.Ping" href="#aiapi.AIServiceNotificationType.Ping">Ping</a></code></li>
+<li><code><a title="aiapi.AIServiceNotificationType.Shutdown" href="#aiapi.AIServiceNotificationType.Shutdown">Shutdown</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

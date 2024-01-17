@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/arif/dev/brain/src/python/./intake/intakebase.py", line 8, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+Traceback (most recent call last):
+  File "/home/arif/dev/brain/src/python/./intake/intakebase.py", line 8, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+Traceback (most recent call last):
+  File "/home/arif/dev/brain/src/python/./intake/intakebase.py", line 8, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'

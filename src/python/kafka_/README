@@ -1,0 +1,12 @@
+env variables required for running Services
+RUN_TIME_ENV
+PYTHONPATH
+SERVICE_ID
+
+If you want to run your services locally, remember to set all these variables to avoid unexpected behaviours.
+
+To install kafka locally in docker
+make sure 
+- psql is already running
+- boltzman network is created
+- env variables are set

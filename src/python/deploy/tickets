@@ -1,0 +1,61 @@
+- mutate input gene implementation +
+    call mutate int just like list 
+    implement total random input dataport , make sure not same with existing ones
+    add remove new dataports
+
+- seperate breeding picker object from mutator task, sql select strategy and flexibility
+
+- simple vue or cli dashboard showing network stat
+    Training : 4500
+    Waiting to be trained: 8000
+    Active : 200
+    Dead = 34000
+
+
+- genes test file setup and test for input layer test
+- gene layers test
+- gene output test
+- AITask unit tests  
+- AITaskOrchestrator unit tests
+- AITrader tests 
+- kill freeze feature *
+- cli args for aiservice orchestrator
+
+
+GETTING THERE *******
+- test for output data normalizer in network tests 6:15 +
+- change prediction code based on new stuff +
+- implement train in network , delete from dataport code +
+- local train in __main__ +
+- trainer loop skip off days/hours 45 mins +
+- trainer test 30 mins +
+- model save / load implemntation 2 hours +
+
+- more flexible label normalization code , now average based but should have other ways 2 hours
+- add us or other market holidays to the config
+- move partial training to network class 30 mins +
+- check scoring bug if there is one 30 mins
+- gene signature, comparision implementation to compare 1 hour
+- implement mutation 2 hours
+- redis deployment
+- redis utilities
+- redis current time implementation
+
+
+- parse nasdaq list 11:00
+- parse nyse list 11:20
+- random record picker for postgresql 12:15
+- add log for each ingest and implement sql check code if ingest is in
+- finish duetto class annotation
+- watch some video for free time
+- add 2 paragpraphs to Argo
+
+
+
+
+
+
+
+
+
+

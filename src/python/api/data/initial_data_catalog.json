@@ -1,0 +1,70 @@
+{
+    "data_category_tree": {
+    "310608be-1afa-45bf-9849-6d1e36c48368": {
+      "name": "Financial Data",
+      "description": "All Financial Data",
+      "e4534242-a75c-11ed-afa1-0242ac120002" : {
+          "name" : "US Markets",
+          "description": "All US Markets",
+          "time_series_count": 0,
+          "a4534242-a75c-11ed-afa1-0242ac120001" : {
+            "name" : "NASDAQ",
+            "description" : "North American Securities Dealers Automated Quotation system",
+            "time_series_count": 0
+          },
+          "b4534242-a75c-11ed-afa1-0242ac120012" : {
+            "name" : "NYSE",
+            "description" : "New York Stock Exchange"
+          },
+          "14534242-a75c-11ed-afa1-0242ac12000d" : {
+            "name" : "CBOE",
+            "description" : "Chicago Board Options Exchange"
+          }
+        },
+        "e4534242-a75c-22ed-afa1-0242ac120002" : {
+          "name" : "China",
+          "description": "Beijing Stock Exchange",
+        }        
+    },
+    "e4534242-b75c-11ed-afa1-0242ac120002": {
+      "name": "Economic Indicators",
+      "description": "Economic Data",
+      "e4534242-a750-11ed-afa1-0242ac120002" : {
+          "name" : "GDP",
+          "description": "Gross Domestic Product By Countries ",
+          "time_series_count": 0,
+          "b4534242-a75c-11ed-afa1-0242ac121012" : {
+            "name" : "Asia",
+            "description" : "Asian Countries GDP",
+            "time_series_count": 12
+          },
+          "e4534242-a75c-11ed-afa1-0242ac121009" : {
+            "name" : "Europe",
+            "description" : "Europe Countries GDP"
+          },
+          "e4534242-a75c-71bc-afa1-0242ac120002" : {
+            "name" : "North America",
+            "description" : "US and Canada GDP Data"
+          }
+        },
+      "e4534242-a75c-11ed-afa1-0242bbb20002" : {
+        "name" : "Inflation",
+        "description": "Beijing Stock Exchange",
+        "time_series_count": 20,
+        "id1" : {
+          "name" : "Asia",
+          "description" : "Asian Countries GDP",
+          "time_series_count": 12
+        },
+        "ccc34242-a75c-11ed-afa1-0242ac120002" : {
+          "name" : "Europe",
+          "description" : "Europe Countries GDP"
+        },
+        "cc5dd242-a75c-11ed-afa1-0242ac120002" : {
+          "name" : "North America",
+          "description" : "US and Canada GDP Data"
+        }        
+      }        
+    }    
+  }
+}

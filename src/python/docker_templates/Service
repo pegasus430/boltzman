@@ -1,0 +1,18 @@
+FROM python:3.10.0
+
+LABEL Maintainer="Boltzmann"
+
+ARG SERVICE_NAME
+
+WORKDIR /usr/app/bin/service
+
+COPY service_code/  ./
+
+CMD export PYTHONPATH=/usr/app/bin/service;\
+    pip3 install -r requirements.txt --no-cache-dir;\
+    #unzip -n ./service_images/python_libs.zip -d /usr/local/lib;\
+    cd workers;\
+    export RUN_TIME_ENV=docker;\
+    exec python3 ./aitrainer.py
+
+ENTRYPOINT []

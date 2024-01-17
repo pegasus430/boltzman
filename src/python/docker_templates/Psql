@@ -1,0 +1,15 @@
+FROM postgres:9.2
+
+LABEL Maintainer="Arif Bilgin"
+
+ENV POSTGRES_PASSWORD BBahadirBfirab77
+ENV POSTGRES_DB capitalist
+
+ARG SERVICE_NAME
+
+WORKDIR /usr/app/bin/service
+
+COPY db_backup/backup.sql /docker-entrypoint-initdb.d/
+COPY sql/init_db.sql /docker-entrypoint-initdb.d/
+#CMD psql --host 0.0.0.0 -d capitalist -f backup.sql -U postgres
+#CMD psql -U postgres
